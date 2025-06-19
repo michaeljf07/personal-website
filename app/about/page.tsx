@@ -43,40 +43,35 @@ export default function AboutMe() {
                             and business strategy to contribute to exciting,
                             meaningful projects.
                         </p>
-                        <p>
-                            Outside of tech, you can find me reading, playing
-                            sports, or working on side projects that challenge
-                            me to grow.
-                        </p>
+
+                        <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-center">
+                            My Skills
+                        </h2>
+                        <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center lg:text-xl md:text-lg sm:text-xl">
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Organization
+                            </li>
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Discipline
+                            </li>
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Learning
+                            </li>
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Adaptability
+                            </li>
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Teamwork
+                            </li>
+                            <li className="bg-red-600 py-4 rounded-full shadow">
+                                Problem Solving
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <section className="w-full max-w-4xl my-16 px-4">
-                <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-center">
-                    My Skills
-                </h2>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center text-lg sm:text-xl">
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Organization
-                    </li>
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Discipline
-                    </li>
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Learning
-                    </li>
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Adaptability
-                    </li>
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Teamwork
-                    </li>
-                    <li className="bg-red-600 py-4 rounded-full shadow">
-                        Problem Solving
-                    </li>
-                </ul>
-            </section>
+            <section className="w-full max-w-4xl my-16 px-4"></section>
         </main>
     );
 }

@@ -10,13 +10,13 @@ const playfair = Playfair_Display({
 export default function Home() {
     return (
         <div className="flex flex-col lg:flex-row mx-auto my-20 w-11/12 lg:w-5/6 max-w-[1400px] px-4">
-            <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
+            <div className="w-full lg:w-3/5 mb-12 lg:mb-0">
                 <h1
                     className={`${playfair.className} text-5xl sm:text-6xl lg:text-8xl leading-tight`}>
                     Hello, I&apos;m Michael Ferreira.
                 </h1>
                 <p className="py-8 text-lg sm:text-xl">
-                    Hi, I’m Michael Ferreira — an incoming student at the{" "}
+                    Hi, I&apos;m Michael Ferreira — an incoming student at the{" "}
                     <span className="font-bold text-red-400">
                         University of Waterloo
                     </span>
@@ -50,7 +50,7 @@ export default function Home() {
                             </button>
                         </Link>
                     </li>
-                    <li className="flex justify-center sm:justify-start">
+                    <li className="flex justify-center sm:justify-start my-auto">
                         <Link
                             href="https://www.linkedin.com/in/michael-j-ferreira/"
                             target="_blank">
@@ -63,7 +63,7 @@ export default function Home() {
                             />
                         </Link>
                     </li>
-                    <li className="flex justify-center sm:justify-start">
+                    <li className="flex justify-center sm:justify-start my-auto">
                         <Link
                             href="https://github.com/michaeljf07"
                             target="_blank">
@@ -79,12 +79,12 @@ export default function Home() {
                 </ul>
             </div>
 
-            <div className="w-full lg:w-1/2 flex justify-center items-center">
+            <div className="w-full lg:w-2/5 flex justify-center items-center">
                 <Image
                     src="/Headshot.png"
                     alt="Michael Ferreira"
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     className="rounded-4xl max-w-xs sm:max-w-sm lg:max-w-lg h-auto"
                 />
             </div>
