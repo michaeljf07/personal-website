@@ -3,14 +3,14 @@ export const projects = [
         title: "Atari Centipede Remake",
         description:
             "A replica of the classic Atari Centipede game using Pygame.",
-        githubUrl: "https://github.com/yourusername/portfolio-website",
+        githubUrl: "https://github.com/michaeljf07/portfolio-website",
         image: "/centipede.png",
     },
     {
         title: "Baobab",
         description:
             "A platform designed to make charitable giving simple, transparent, and impactful by directly connecting donors and charities.",
-        githubUrl: "https://github.com/yourusername/baobab",
+        githubUrl: "https://github.com/michaeljf07/baobab",
         image: "/baobab.png",
     },
     {
