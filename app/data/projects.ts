@@ -1,5 +1,12 @@
 export const projects = [
     {
+        title: "Forex Stock Predictor",
+        description:
+            "A machine learning pipeline for predicting forex price movements using technical indicators and market data.",
+        githubUrl: "https://github.com/michaeljf07/forex-predictor",
+        image: "/forex.png",
+    },
+    {
         title: "Atari Centipede Remake",
         description:
             "A replica of the classic Atari Centipede game using Pygame.",

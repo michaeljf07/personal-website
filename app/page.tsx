@@ -16,7 +16,7 @@ export default function Home() {
                     Hello, I&apos;m Michael Ferreira.
                 </h1>
                 <p className="py-8 text-lg sm:text-xl">
-                    Hi, I&apos;m Michael Ferreira — an incoming student at the{" "}
+                    Hi, I&apos;m Michael Ferreira — a student at the{" "}
                     <span className="font-bold text-red-400">
                         University of Waterloo
                     </span>
@@ -81,7 +81,7 @@ export default function Home() {
 
             <div className="w-full lg:w-2/5 flex justify-center items-center">
                 <Image
-                    src="/Headshot.png"
+                    src="/headshot1.jpg"
                     alt="Michael Ferreira"
                     width={400}
                     height={400}

@@ -21,7 +21,7 @@ export default function AboutMe() {
                 <div className="flex flex-col md:flex-row items-center lg:my-16 sm:my-4 p-8 md:p-12">
                     <div className="flex-1 mb-8 md:mb-0">
                         <Image
-                            src="/Headshot.png"
+                            src="/headshot2.png"
                             alt="Michael Ferreira"
                             width={400}
                             height={400}
