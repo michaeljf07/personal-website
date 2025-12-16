@@ -9,84 +9,110 @@ const playfair = Playfair_Display({
 
 export default function Home() {
     return (
-        <div className="flex flex-col lg:flex-row mx-auto my-20 w-11/12 lg:w-5/6 max-w-[1400px] px-4">
-            <div className="w-full lg:w-3/5 mb-12 lg:mb-0">
+        <div className="flex flex-col lg:flex-row mx-auto my-20 w-11/12 lg:w-5/6 max-w-[1400px] px-4 gap-12 lg:gap-16">
+            <div className="w-full lg:w-3/5 flex flex-col justify-center">
                 <h1
-                    className={`${playfair.className} text-5xl sm:text-6xl lg:text-8xl leading-tight`}>
-                    Hello, I&apos;m Michael Ferreira.
+                    className={`${playfair.className} text-5xl sm:text-6xl lg:text-8xl leading-tight mb-2 pb-6`}>
+                    I&apos;m Michael Ferreira.
                 </h1>
-                <p className="py-8 text-lg sm:text-xl">
-                    Hi, I&apos;m Michael Ferreira — a student at the{" "}
-                    <span className="font-bold text-red-400">
+
+                <div className="inline-flex items-center gap-2 bg-green-600/10 border border-green-500/20 rounded-full px-4 py-2 w-fit mb-6">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm text-green-400 font-medium">
+                        Open to opportunities
+                    </span>
+                </div>
+
+                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+                    Student at the{" "}
+                    <span className="font-semibold text-red-400">
                         University of Waterloo
                     </span>
                     , pursuing a{" "}
-                    <span className="font-bold text-red-400">
+                    <span className="font-semibold text-red-400">
                         double degree in Computer Science and Business
                         Administration
                     </span>{" "}
-                    through Wilfrid Laurier University. I&apos;m passionate
-                    about building innovative solutions at the intersection of
-                    technology and business, and I&apos;m excited to grow in
-                    both fields throughout my university journey. I&apos;m
-                    currently open for work opportunities.
+                    through Wilfrid Laurier University.
                 </p>
-                <p className="text-lg sm:text-xl">
-                    I&apos;m currently working with:
+
+                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+                    I&apos;m passionate about building innovative solutions at
+                    the intersection of technology and business.
                 </p>
-                <ul className="mx-8 my-4 list-disc grid grid-cols-2 sm:grid-cols-3 text-lg sm:text-xl gap-2">
-                    <li>Python</li>
-                    <li>React</li>
-                    <li>HTML/CSS</li>
-                    <li>Typescript</li>
-                    <li>Next.js</li>
-                    <li>Anything I Can Learn</li>
-                </ul>
-                <ul className="flex flex-col sm:flex-row gap-8 my-8">
-                    <li>
-                        <Link href="/resume.pdf" target="_blank">
-                            <button className="bg-red-600 rounded-2xl py-4 px-6 text-2xl hover:bg-red-400 hover:cursor-pointer w-full sm:w-auto">
-                                Resume
-                            </button>
-                        </Link>
-                    </li>
-                    <li className="flex justify-center sm:justify-start my-auto">
+
+                {/* Tech Stack Section with improved design */}
+                <div className="mb-8">
+                    <h2 className="text-xl font-semibold mb-4 text-gray-200">
+                        Currently working with
+                    </h2>
+                    <div className="flex flex-wrap gap-3">
+                        {[
+                            "Python",
+                            "React",
+                            "HTML/CSS",
+                            "TypeScript",
+                            "Next.js",
+                            "Always Learning",
+                        ].map((tech) => (
+                            <span
+                                key={tech}
+                                className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-sm hover:border-red-500 hover:bg-gray-700 transition-all duration-200">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* CTA Buttons with improved styling */}
+                <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                    <Link href="/resume.pdf" target="_blank">
+                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-full sm:w-auto">
+                            View Resume
+                        </button>
+                    </Link>
+
+                    <div className="flex gap-4 justify-center sm:justify-start w-full sm:w-auto">
                         <Link
                             href="https://www.linkedin.com/in/michael-j-ferreira/"
-                            target="_blank">
+                            target="_blank"
+                            className="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-gray-700 hover:border-gray-600">
                             <Image
                                 src="/linkedin.png"
                                 alt="LinkedIn"
-                                width={50}
-                                height={50}
-                                className="hover:cursor-pointer"
+                                width={28}
+                                height={28}
                             />
                         </Link>
-                    </li>
-                    <li className="flex justify-center sm:justify-start my-auto">
                         <Link
                             href="https://github.com/michaeljf07"
-                            target="_blank">
+                            target="_blank"
+                            className="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-gray-700 hover:border-gray-600">
                             <Image
                                 src="/github.png"
                                 alt="GitHub"
-                                width={50}
-                                height={50}
-                                className="hover:cursor-pointer"
+                                width={28}
+                                height={28}
                             />
                         </Link>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
 
             <div className="w-full lg:w-2/5 flex justify-center items-center">
-                <Image
-                    src="/headshot1.jpg"
-                    alt="Michael Ferreira"
-                    width={400}
-                    height={400}
-                    className="rounded-4xl max-w-xs sm:max-w-sm lg:max-w-lg h-auto"
-                />
+                <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-400/20 rounded-3xl blur-md"></div>
+
+                    <div className="relative bg-gradient-to-br from-red-600 to-red-400 p-0.5 rounded-3xl">
+                        <Image
+                            src="/headshot1.jpg"
+                            alt="Michael Ferreira"
+                            width={400}
+                            height={400}
+                            className="rounded-3xl max-w-xs sm:max-w-sm lg:max-w-lg h-auto"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
