@@ -34,11 +34,10 @@ export default function ProjectsPage() {
                             <h2 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors duration-300">
                                 {project.title}
                             </h2>
-                            <p className="text-gray-300 text-base mb-6 leading-relaxed flex-grow">
+                            <p className="text-gray-100 text-base mb-6 leading-relaxed flex-grow">
                                 {project.description}
                             </p>
 
-                            {/* GitHub Button */}
                             <a
                                 href={project.githubUrl}
                                 target="_blank"

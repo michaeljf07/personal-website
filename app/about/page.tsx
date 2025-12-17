@@ -38,7 +38,7 @@ export default function AboutMe() {
 
                     <div className="flex-1 text-white text-base sm:text-lg leading-relaxed md:pl-4">
                         <div className="space-y-6 mb-10">
-                            <p className="text-gray-300">
+                            <p className="text-gray-100">
                                 I&apos;m a{" "}
                                 <span className="text-red-400 font-semibold">
                                     builder at heart
