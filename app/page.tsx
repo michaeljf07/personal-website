@@ -1,18 +1,11 @@
-import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
-const playfair = Playfair_Display({
-    weight: "400",
-    subsets: ["latin"],
-});
 
 export default function Home() {
     return (
         <div className="flex flex-col lg:flex-row mx-auto my-20 w-11/12 lg:w-5/6 max-w-[1400px] px-4 gap-12 lg:gap-16">
             <div className="w-full lg:w-3/5 flex flex-col justify-center">
-                <h1
-                    className={`${playfair.className} text-5xl sm:text-6xl lg:text-8xl leading-tight mb-2 pb-6`}>
+                <h1 className="text-5xl sm:text-6xl lg:text-8xl leading-tight mb-2 pb-2">
                     I&apos;m Michael Ferreira.
                 </h1>
 
@@ -24,15 +17,8 @@ export default function Home() {
                 </div>
 
                 <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
-                    Student at the{" "}
-                    <span className="font-semibold text-red-400">
-                        University of Waterloo
-                    </span>
-                    , pursuing a{" "}
-                    <span className="font-semibold text-red-400">
-                        double degree in Computer Science and Business
-                        Administration
-                    </span>{" "}
+                    Student at the University of Waterloo, pursuing a double
+                    degree in Computer Science and Business Administration
                     through Wilfrid Laurier University.
                 </p>
 
@@ -41,7 +27,6 @@ export default function Home() {
                     the intersection of technology and business.
                 </p>
 
-                {/* Tech Stack Section with improved design */}
                 <div className="mb-8">
                     <h2 className="text-xl font-semibold mb-4 text-gray-200">
                         Currently working with
@@ -57,17 +42,16 @@ export default function Home() {
                         ].map((tech) => (
                             <span
                                 key={tech}
-                                className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-sm hover:border-red-500 hover:bg-gray-700 transition-all duration-200">
+                                className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-sm cursor-default">
                                 {tech}
                             </span>
                         ))}
                     </div>
                 </div>
 
-                {/* CTA Buttons with improved styling */}
                 <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                     <Link href="/resume.pdf" target="_blank">
-                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-full sm:w-auto">
+                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-full sm:w-auto hover: cursor-pointer">
                             View Resume
                         </button>
                     </Link>

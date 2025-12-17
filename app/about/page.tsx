@@ -3,30 +3,23 @@ import Image from "next/image";
 export default function AboutMe() {
     return (
         <main className="flex flex-col items-center mx-auto w-11/12 md:w-5/6 lg:py-20 px-4 max-w-[1400px]">
-            <section className="text-center mb-20">
+            <section className="text-center mb-4">
+                <h1 className="text-5xl sm:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent">
+                    About Me
+                </h1>
+
+                <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                    Hi, I&apos;m Michael Ferreira — a student at the University
+                    of Waterloo, pursuing a double degree in Computer Science
+                    and Business Administration through Wilfrid Laurier
+                    University.
+                </p>
                 <div className="inline-flex items-center gap-2 bg-green-600/10 border border-green-500/20 rounded-full px-4 py-2 w-fit mb-6">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                     <span className="text-sm text-green-400 font-medium">
                         Open to opportunities
                     </span>
                 </div>
-
-                <h1 className="text-5xl sm:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent">
-                    About Me
-                </h1>
-
-                <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    Hi, I&apos;m Michael Ferreira — a student at the{" "}
-                    <span className="font-semibold text-red-400">
-                        University of Waterloo
-                    </span>
-                    , pursuing a{" "}
-                    <span className="font-semibold text-red-400">
-                        double degree in Computer Science and Business
-                        Administration
-                    </span>{" "}
-                    through Wilfrid Laurier University.
-                </p>
             </section>
 
             <section className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl w-full border border-gray-800 overflow-hidden">
@@ -76,21 +69,54 @@ export default function AboutMe() {
                             <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center md:text-left bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 My Skills
                             </h2>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[
-                                    "Organization",
-                                    "Discipline",
-                                    "Learning",
-                                    "Adaptability",
-                                    "Teamwork",
-                                    "Problem Solving",
-                                ].map((skill) => (
+                                    {
+                                        skill: "Organization",
+                                        description:
+                                            "Structured approach to tasks",
+                                    },
+                                    {
+                                        skill: "Discipline",
+                                        description:
+                                            "Consistent and focused execution",
+                                    },
+                                    {
+                                        skill: "Learning",
+                                        description: "Quick to adapt and grow",
+                                    },
+                                    {
+                                        skill: "Adaptability",
+                                        description:
+                                            "Thrives in changing environments",
+                                    },
+                                    {
+                                        skill: "Teamwork",
+                                        description:
+                                            "Collaborative and supportive",
+                                    },
+                                    {
+                                        skill: "Problem Solving",
+                                        description:
+                                            "Creative and analytical thinking",
+                                    },
+                                ].map((item, index) => (
                                     <div
-                                        key={skill}
-                                        className="bg-gradient-to-br from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 px-4 py-4 rounded-2xl shadow-lg hover:shadow-red-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center min-h-[5rem] border border-red-400/20">
-                                        <span className="text-lg sm:text-base font-medium text-center">
-                                            {skill}
-                                        </span>
+                                        key={item.skill}
+                                        className="group relative bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-red-500/50 rounded-xl p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/20">
+                                        <div className="absolute top-3 right-3 w-8 h-8 bg-red-600/20 border border-red-500/30 rounded-full flex items-center justify-center text-red-400 text-xs font-bold">
+                                            {index + 1}
+                                        </div>
+
+                                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors duration-300">
+                                            {item.skill}
+                                        </h3>
+
+                                        <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                                            {item.description}
+                                        </p>
+
+                                        <div className="mt-3 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-red-600 to-red-400 transition-all duration-500"></div>
                                     </div>
                                 ))}
                             </div>
@@ -98,11 +124,10 @@ export default function AboutMe() {
                     </div>
                 </div>
             </section>
-
             <section className="w-full max-w-4xl my-20 px-4">
                 <div className="text-center">
                     <p className="text-gray-400 text-lg">
-                        Let&apos;s build something amazing together
+                        And more coming soon!
                     </p>
                     <div className="flex justify-center gap-2 mt-4">
                         <div className="w-2 h-2 bg-red-600 rounded-full animate-bounce"></div>

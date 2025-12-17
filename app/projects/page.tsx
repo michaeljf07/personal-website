@@ -19,7 +19,6 @@ export default function ProjectsPage() {
                     <div
                         key={index}
                         className="group bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-800 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:shadow-red-600/20 transition-all duration-300 hover:-translate-y-2 flex flex-col">
-                        {/* Image Container */}
                         <div className="relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                             <Image
@@ -31,7 +30,6 @@ export default function ProjectsPage() {
                             />
                         </div>
 
-                        {/* Content Container */}
                         <div className="flex flex-col flex-grow p-6">
                             <h2 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors duration-300">
                                 {project.title}
