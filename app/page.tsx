@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import WorkStatus from "@/components/work_status";
 
 export default function Home() {
     return (
@@ -9,26 +10,21 @@ export default function Home() {
                     I&apos;m Michael Ferreira.
                 </h1>
 
-                <div className="inline-flex items-center gap-2 bg-green-600/10 border border-green-500/20 rounded-full px-4 py-2 w-fit mb-6">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-green-400 font-medium">
-                        Open to opportunities
-                    </span>
-                </div>
+                <WorkStatus />
 
-                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
-                    Student at the University of Waterloo, pursuing a double
-                    degree in Computer Science and Business Administration
-                    through Wilfrid Laurier University.
+                <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-8">
+                    I&apos;m a student at the University of Waterloo and Wilfred
+                    Laurier University, pursuing a double degree in Computer
+                    Science and Business Administration.
                 </p>
 
-                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+                <p className="text-lg sm:text-xl text-gray-100 leading-relaxed mb-8">
                     I&apos;m passionate about building innovative solutions at
                     the intersection of technology and business.
                 </p>
 
                 <div className="mb-8">
-                    <h2 className="text-xl font-semibold mb-4 text-gray-200">
+                    <h2 className="text-xl font-semibold mb-4 text-gray-100">
                         Currently working with
                     </h2>
                     <div className="flex flex-wrap gap-3">
@@ -38,7 +34,8 @@ export default function Home() {
                             "HTML/CSS",
                             "TypeScript",
                             "Next.js",
-                            "Always Learning",
+                            "Racket",
+                            "C",
                         ].map((tech) => (
                             <span
                                 key={tech}
@@ -49,14 +46,14 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <div className="flex flex-row gap-4 items-center flex-wrap">
                     <Link href="/resume.pdf" target="_blank">
-                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-full sm:w-auto hover: cursor-pointer">
+                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-auto flex-none hover: cursor-pointer">
                             View Resume
                         </button>
                     </Link>
 
-                    <div className="flex gap-4 justify-center sm:justify-start w-full sm:w-auto">
+                    <div className="flex gap-4 justify-center sm:justify-start flex-none items-center">
                         <Link
                             href="https://www.linkedin.com/in/michael-j-ferreira/"
                             target="_blank"

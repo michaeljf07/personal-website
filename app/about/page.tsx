@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WorkStatus from "@/components/work_status";
 
 export default function AboutMe() {
     return (
@@ -8,18 +9,13 @@ export default function AboutMe() {
                     About Me
                 </h1>
 
-                <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed mb-8">
                     Hi, I&apos;m Michael Ferreira — a student at the University
-                    of Waterloo, pursuing a double degree in Computer Science
-                    and Business Administration through Wilfrid Laurier
-                    University.
+                    of Waterloo and Wilfred Laurier University, pursuing a
+                    double degree in Computer Science and Business
+                    Administration.
                 </p>
-                <div className="inline-flex items-center gap-2 bg-green-600/10 border border-green-500/20 rounded-full px-4 py-2 w-fit mb-6">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-green-400 font-medium">
-                        Open to opportunities
-                    </span>
-                </div>
+                <WorkStatus />
             </section>
 
             <section className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl w-full border border-gray-800 overflow-hidden">
@@ -69,7 +65,7 @@ export default function AboutMe() {
                             <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center md:text-left bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 My Skills
                             </h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 cursor-default">
                                 {[
                                     {
                                         skill: "Organization",
@@ -124,6 +120,61 @@ export default function AboutMe() {
                     </div>
                 </div>
             </section>
+
+            <section className="w-full max-w-5xl my-24 px-4">
+                <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    Languages & Tools
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="bg-gray-800 border border-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
+                        <h3 className="text-2xl font-semibold mb-6 text-red-400">
+                            Languages
+                        </h3>
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Python",
+                                "C",
+                                "Racket",
+                                "TypeScript",
+                                "JavaScript",
+                                "HTML/CSS",
+                            ].map((lang) => (
+                                <span
+                                    key={lang}
+                                    className="bg-gray-800 border border-gray-700 text-white rounded-lg px-4 py-2 text-sm cursor-default">
+                                    {lang}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="bg-gray-800 border border-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
+                        <h3 className="text-2xl font-semibold mb-6 text-red-400">
+                            Frameworks & Libraries
+                        </h3>
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Pandas",
+                                "NumPy",
+                                "Matplotlib",
+                                "scikit-learn",
+                                "Node.js",
+                                "React",
+                                "Next.js",
+                                "Tailwind CSS",
+                            ].map((tool) => (
+                                <span
+                                    key={tool}
+                                    className="bg-gray-800 border border-gray-700 text-white rounded-lg px-4 py-2 text-sm cursor-default">
+                                    {tool}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="w-full max-w-4xl my-20 px-4">
                 <div className="text-center">
                     <p className="text-gray-400 text-lg">
