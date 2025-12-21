@@ -7,7 +7,8 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row mx-auto my-20 w-11/12 lg:w-5/6 max-w-[1400px] px-4 gap-12 lg:gap-16">
             <div className="w-full lg:w-3/5 flex flex-col justify-center">
                 <h1 className="text-5xl sm:text-6xl lg:text-8xl leading-tight mb-2 pb-2">
-                    I&apos;m Michael Ferreira.
+                    I&apos;m Michael Ferreira
+                    <span className="text-pink-600">.</span>
                 </h1>
 
                 <WorkStatus />
@@ -39,7 +40,7 @@ export default function Home() {
                         ].map((tech) => (
                             <span
                                 key={tech}
-                                className="bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-sm cursor-default">
+                                className="bg-slate-800/50 border border-slate-700/50 rounded-lg px-4 py-2 text-sm cursor-default hover:border-indigo-500/30 transition-colors">
                                 {tech}
                             </span>
                         ))}
@@ -48,7 +49,7 @@ export default function Home() {
 
                 <div className="flex flex-row gap-4 items-center flex-wrap">
                     <Link href="/resume.pdf" target="_blank">
-                        <button className="bg-red-600 hover:bg-red-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50 w-auto flex-none hover: cursor-pointer">
+                        <button className="bg-indigo-600 hover:bg-indigo-500 rounded-xl py-3 px-8 text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50 w-auto flex-none hover: cursor-pointer">
                             View Resume
                         </button>
                     </Link>
@@ -57,7 +58,7 @@ export default function Home() {
                         <Link
                             href="https://www.linkedin.com/in/michael-j-ferreira/"
                             target="_blank"
-                            className="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-gray-700 hover:border-gray-600">
+                            className="bg-slate-800 hover:bg-slate-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
                             <Image
                                 src="/linkedin.png"
                                 alt="LinkedIn"
@@ -68,7 +69,7 @@ export default function Home() {
                         <Link
                             href="https://github.com/michaeljf07"
                             target="_blank"
-                            className="bg-gray-800 hover:bg-gray-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-gray-700 hover:border-gray-600">
+                            className="bg-slate-800 hover:bg-slate-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
                             <Image
                                 src="/github.png"
                                 alt="GitHub"
@@ -82,9 +83,9 @@ export default function Home() {
 
             <div className="w-full lg:w-2/5 flex justify-center items-center">
                 <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-400/20 rounded-3xl blur-md"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-3xl blur-md"></div>
 
-                    <div className="relative bg-gradient-to-br from-red-600 to-red-400 p-0.5 rounded-3xl">
+                    <div className="relative bg-indigo-600/75 p-0.5 rounded-3xl">
                         <Image
                             src="/headshot1.jpg"
                             alt="Michael Ferreira"

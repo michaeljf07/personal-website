@@ -18,7 +18,7 @@ export default function ProjectsPage() {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="group bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-800 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:shadow-red-600/20 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                        className="group bg-gradient-to-br from-slate-900 to-slate-950 border border-indigo-500/20 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-2 flex flex-col">
                         <div className="relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                             <Image
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
                         </div>
 
                         <div className="flex flex-col flex-grow p-6">
-                            <h2 className="text-2xl font-bold mb-3 group-hover:text-red-400 transition-colors duration-300">
+                            <h2 className="text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors duration-300">
                                 {project.title}
                             </h2>
                             <p className="text-gray-100 text-base mb-6 leading-relaxed flex-grow">
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
                                 href={project.githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white text-center py-3 px-6 rounded-xl font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-red-600/50">
+                                className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-center py-3 px-6 rounded-xl font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50">
                                 <svg
                                     className="w-5 h-5"
                                     fill="currentColor"

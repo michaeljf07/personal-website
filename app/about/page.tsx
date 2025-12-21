@@ -18,13 +18,13 @@ export default function AboutMe() {
                 <WorkStatus />
             </section>
 
-            <section className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl w-full border border-gray-800 overflow-hidden">
+            <section className="bg-gradient-to-br from-slate-900/75 to-slate-950/75 rounded-3xl shadow-2xl w-full border border-indigo-500/20 overflow-hidden">
                 <div className="flex flex-col md:flex-row items-center lg:p-16 md:p-12 p-8 gap-8 md:gap-12">
                     <div className="w-full lg:w-2/5 flex justify-center items-center">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-400/20 rounded-3xl blur-md"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-pink-600/20 to-rose-600/20 rounded-3xl blur-md"></div>
 
-                            <div className="relative bg-gradient-to-br from-red-600 to-red-400 p-0.5 rounded-3xl">
+                            <div className="relative bg-indigo-600/75 p-0.5 rounded-3xl">
                                 <Image
                                     src="/headshot2.png"
                                     alt="Michael Ferreira"
@@ -40,7 +40,7 @@ export default function AboutMe() {
                         <div className="space-y-6 mb-10">
                             <p className="text-gray-100">
                                 I&apos;m a{" "}
-                                <span className="text-red-400 font-semibold">
+                                <span className="text-indigo-400 font-semibold">
                                     builder at heart
                                 </span>{" "}
                                 who loves bringing ideas to life. Whether
@@ -49,10 +49,10 @@ export default function AboutMe() {
                                 always driven by curiosity and a desire to
                                 create impact.
                             </p>
-                            <p className="text-gray-300">
+                            <p className="text-gray-100">
                                 I&apos;m passionate about building innovative
                                 solutions at the{" "}
-                                <span className="text-red-400 font-semibold">
+                                <span className="text-indigo-400 font-semibold">
                                     intersection of technology and business
                                 </span>
                                 , and I&apos;m excited to apply my skills in
@@ -99,12 +99,12 @@ export default function AboutMe() {
                                 ].map((item, index) => (
                                     <div
                                         key={item.skill}
-                                        className="group relative bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-red-500/50 rounded-xl p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/20">
-                                        <div className="absolute top-3 right-3 w-8 h-8 bg-red-600/20 border border-red-500/30 rounded-full flex items-center justify-center text-red-400 text-xs font-bold">
+                                        className="group relative bg-slate-800/35 backdrop-blur-sm border border-slate-700 hover:border-indigo-500/50 rounded-xl p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-indigo-500/20">
+                                        <div className="absolute top-3 right-3 w-8 h-8 bg-indigo-600/20 border border-indigo-500/30 rounded-full flex items-center justify-center text-indigo-400 text-xs font-bold">
                                             {index + 1}
                                         </div>
 
-                                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors duration-300">
+                                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors duration-300">
                                             {item.skill}
                                         </h3>
 
@@ -112,7 +112,7 @@ export default function AboutMe() {
                                             {item.description}
                                         </p>
 
-                                        <div className="mt-3 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-red-600 to-red-400 transition-all duration-500"></div>
+                                        <div className="mt-3 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-pink-600 to-pink-400 transition-all duration-500"></div>
                                     </div>
                                 ))}
                             </div>
@@ -127,8 +127,8 @@ export default function AboutMe() {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-gray-800 border border-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
-                        <h3 className="text-2xl font-semibold mb-6 text-red-400">
+                    <div className="bg-slate-900/75 border border-slate-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
+                        <h3 className="text-2xl font-semibold mb-6 text-indigo-400">
                             Languages
                         </h3>
                         <div className="flex flex-wrap gap-3">
@@ -142,15 +142,15 @@ export default function AboutMe() {
                             ].map((lang) => (
                                 <span
                                     key={lang}
-                                    className="bg-gray-800 border border-gray-700 text-white rounded-lg px-4 py-2 text-sm cursor-default">
+                                    className="bg-slate-800/50 border border-slate-700 hover:border-indigo-500/30 text-white rounded-lg px-4 py-2 text-sm cursor-default transition-colors">
                                     {lang}
                                 </span>
                             ))}
                         </div>
                     </div>
 
-                    <div className="bg-gray-800 border border-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
-                        <h3 className="text-2xl font-semibold mb-6 text-red-400">
+                    <div className="bg-slate-900/75 border border-slate-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300">
+                        <h3 className="text-2xl font-semibold mb-6 text-indigo-400">
                             Frameworks & Libraries
                         </h3>
                         <div className="flex flex-wrap gap-3">
@@ -166,7 +166,7 @@ export default function AboutMe() {
                             ].map((tool) => (
                                 <span
                                     key={tool}
-                                    className="bg-gray-800 border border-gray-700 text-white rounded-lg px-4 py-2 text-sm cursor-default">
+                                    className="bg-slate-800/50 border border-slate-700 hover:border-indigo-500/30 text-white rounded-lg px-4 py-2 text-sm cursor-default transition-colors">
                                     {tool}
                                 </span>
                             ))}
@@ -175,18 +175,18 @@ export default function AboutMe() {
                 </div>
             </section>
 
-            <section className="w-full max-w-4xl my-20 px-4">
+            <section className="w-full max-w-4xl my-10 px-4">
                 <div className="text-center">
                     <p className="text-gray-400 text-lg">
                         And more coming soon!
                     </p>
                     <div className="flex justify-center gap-2 mt-4">
-                        <div className="w-2 h-2 bg-red-600 rounded-full animate-bounce"></div>
+                        <div className="w-2 h-2 bg-pink-600 rounded-full animate-bounce"></div>
                         <div
-                            className="w-2 h-2 bg-red-500 rounded-full animate-bounce"
+                            className="w-2 h-2 bg-pink-500 rounded-full animate-bounce"
                             style={{ animationDelay: "0.2s" }}></div>
                         <div
-                            className="w-2 h-2 bg-red-400 rounded-full animate-bounce"
+                            className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"
                             style={{ animationDelay: "0.4s" }}></div>
                     </div>
                 </div>

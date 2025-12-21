@@ -33,9 +33,9 @@ export default function Navbar() {
     return (
         <nav className="flex justify-center my-8 px-4">
             <div className="relative">
-                <ul className="flex gap-2 text-base sm:text-lg px-3 py-2 rounded-full bg-gray-900/80 backdrop-blur-md border border-gray-800 shadow-2xl relative">
+                <ul className="flex gap-2 text-base sm:text-lg px-3 py-2 rounded-full bg-slate-900/60 backdrop-blur-xl border border-indigo-500/20 shadow-2xl relative">
                     <div
-                        className="absolute top-2 h-[calc(100%-1rem)] bg-gradient-to-r from-red-600 to-red-500 rounded-full transition-all duration-300 ease-out shadow-md shadow-red-600/50"
+                        className="absolute top-2 h-[calc(100%-1rem)] bg-gradient-to-r from-indigo-600 to-indigo-500 rounded-full transition-all duration-300 ease-out shadow-md shadow-indigo-500/40"
                         style={{
                             left: pillStyle.left,
                             width: pillStyle.width,
@@ -54,7 +54,7 @@ export default function Navbar() {
                                 className={`block px-6 py-2.5 rounded-full transition-all duration-300 font-medium text-center ${
                                     pathname === item.path
                                         ? "text-white"
-                                        : "text-gray-400 hover:text-white hover:bg-gray-800/50"
+                                        : "text-slate-400 hover:text-white hover:bg-slate-800/40"
                                 }`}>
                                 {item.name}
                             </Link>
