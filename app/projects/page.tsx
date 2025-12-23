@@ -38,6 +38,16 @@ export default function ProjectsPage() {
                                 {project.description}
                             </p>
 
+                            <div className="flex flex-wrap gap-2 mb-6">
+                                {project.technologies.map((tech, techIndex) => (
+                                    <span
+                                        key={techIndex}
+                                        className="text-xs bg-slate-800/50 border border-slate-700/50 px-3 py-1 rounded-lg ">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
                             <a
                                 href={project.githubUrl}
                                 target="_blank"

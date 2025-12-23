@@ -58,7 +58,7 @@ export default function Home() {
                         <Link
                             href="https://www.linkedin.com/in/michael-j-ferreira/"
                             target="_blank"
-                            className="bg-slate-800 hover:bg-slate-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
+                            className="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
                             <Image
                                 src="/linkedin.png"
                                 alt="LinkedIn"
@@ -69,7 +69,7 @@ export default function Home() {
                         <Link
                             href="https://github.com/michaeljf07"
                             target="_blank"
-                            className="bg-slate-800 hover:bg-slate-700 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
+                            className="bg-slate-800/50 hover:bg-slate-700/50 p-3 rounded-xl transition-all duration-200 hover:scale-110 border border-slate-700 hover:border-indigo-500/40">
                             <Image
                                 src="/github.png"
                                 alt="GitHub"
